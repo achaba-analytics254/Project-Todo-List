@@ -1,14 +1,21 @@
 // src/modules/todo.js
-import { format, isToday, isThisWeek, isBefore, parseISO } from 'date-fns';
+import { format, isToday, isThisWeek, isBefore, parseISO } from "date-fns";
 
 export class Todo {
-  constructor(title, description, dueDate, priority, notes, projectId = 'default') {
+  constructor(
+    title,
+    description,
+    dueDate,
+    priority,
+    notes,
+    projectId = "default",
+  ) {
     this.id = Date.now().toString();
     this.title = title;
-    this.description = description || '';
+    this.description = description || "";
     this.dueDate = dueDate;
-    this.priority = priority || 'medium';
-    this.notes = notes || '';
+    this.priority = priority || "medium";
+    this.notes = notes || "";
     this.projectId = projectId;
     this.completed = false;
     this.createdAt = new Date().toISOString();
@@ -28,7 +35,7 @@ export class Todo {
   }
 
   getFormattedDueDate() {
-    return format(parseISO(this.dueDate), 'PPP');
+    return format(parseISO(this.dueDate), "PPP");
   }
 
   isOverdue() {
@@ -45,10 +52,10 @@ export class Todo {
 
   getPriorityClass() {
     const priorityClasses = {
-      low: 'priority-low',
-      medium: 'priority-medium',
-      high: 'priority-high',
+      low: "priority-low",
+      medium: "priority-medium",
+      high: "priority-high",
     };
-    return priorityClasses[this.priority] || 'priority-medium';
+    return priorityClasses[this.priority] || "priority-medium";
   }
 }

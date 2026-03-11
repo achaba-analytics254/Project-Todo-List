@@ -18,6 +18,7 @@
     --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --shadow-btn: 0 2px 4px rgba(0, 0, 0, 0.3);;
     --border-radius: 8px;
     --button-radius: 4px;
     --transition: all 0.3s ease;
@@ -74,6 +75,7 @@ body {
     border-radius: var(--button-radius);
     align-items: center;
     margin-bottom: 20px;
+    box-shadow: var(--shadow-btn);
 }
 
 .sidebar-header h2 {
@@ -89,7 +91,7 @@ body {
     font-weight: 700;
     font-size: 1rem;
     cursor: pointer;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-btn);
     transition: var(--transition);
 }
 
@@ -120,7 +122,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-btn);
 }
 
 #addTodoBtn:hover{
@@ -149,6 +151,7 @@ body {
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+    box-shadow: var(--shadow-btn);
     transition: var(--transition);
     border-radius: var(--button-radius);
 }
@@ -215,6 +218,7 @@ body {
     cursor: pointer;
     font-weight: 600;
     width: 100%;
+    box-shadow: var(--shadow-btn);
     transition: var(--transition);
 }
 
@@ -254,7 +258,7 @@ body {
     margin-bottom: 30px;
     padding: 20px;
     border-radius: var(--border-radius);
-    box-shadow: var(--shadow-md);
+    box-shadow: var(--shadow-btn);
     background: var(--white);
     border-bottom: 1px solid var(--gray-light);
 }
@@ -380,6 +384,7 @@ body {
     font-size: 14px;
     padding: 4px 8px;
     border-radius: 4px;
+    box-shadow: var(--shadow-btn);
     transition: var(--transition);
 }
 

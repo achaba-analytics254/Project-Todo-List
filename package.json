@@ -12,7 +12,9 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "css-loader": "^7.1.4",
+    "globals": "^17.4.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
     "style-loader": "^4.0.0",
