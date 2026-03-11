@@ -47,3 +47,5 @@ export class Project {
     );
   }
 }
+
+// git checkout gh-pages && git merge main --no-edit
